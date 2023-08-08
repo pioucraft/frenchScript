@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrenchScript Documentation</title>
+</head>
+<body>
+    <h1>FrenchScript Documentation</h1>
+    <p>Here, you'll find translations of functions and elements from FrenchScript to Javascript.</p>
+    <div id="theDiv">
+        
+    </div>
+
+    <script>
+        let translations = [["console.dire(", "console.log("],["alerte(", "alert("],["cEstVrai", "true"],["cEstFaux", "false"],["cEstNul", "nul"],["leTypeDeCetteChoseEst", "typeof"],["indéfini", "undefined"],["définir", "let"],["constante", "const"],["variable", "var"],["Mathématiques.arrondir", "Math.round"],["Mathématiques.sol", "Math.floor"],["Mathématiques.plafond", "Math.ceil"],["Mathématiques.minimum", "Math.min"],["Mathématiques.maximum", "Math.max"],["Mathématiques.nombreAléatoire", "Math.random"],["Mathématiques.racineCarée", "Math.sqrt"],["siIlSePasseQue", "if"],["sinon", "else"],["sisi", "else if"],[".diviser(", ".split("],[".rejoindre(", ".join("],[".inclut(", ".includes("],["enChaineDeCharactères", "toString"],["remplacer(", "replace("],["EnNombreIntégré(", "ParseInt("],["EnNombreQuiFLotte(", "parseFloat("],["PrendreUnÉlémentParSonidentifiant(", "getElementById("],[".HTMLIntérieur", ".innerHTML"],["définirLAttribut(", "setAttribute("]]
+        for(let i=0;i<translations.length;i++) {
+            document.getElementById("theDiv").innerHTML += `<p>"${translations[i][0]}" => "${translations[i][1]}"</p>`
+        }
+    </script>
+</body>
+</html>
